@@ -1,16 +1,56 @@
 html,
 body {
+  width: 100%;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5;
+  font-size: xx-large;
+  background-color: #06090f;
 }
 
+body,
+button,
 a {
-  color: inherit;
-  text-decoration: none;
+  color: #5dd463;
+}
+
+#__next {
+  width: 100%;
 }
 
 * {
   box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 2rem;
+}
+
+header button {
+  padding: 0.4rem;
+  border-radius: 3px;
+  border-width: 2px;
+  background: none;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+  border-color: #5dd463;
+}
+
+header button:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 2rem;
+}
+
+footer {
+  margin: 2rem;
+  position: fixed;
+  bottom: 0;
 }
