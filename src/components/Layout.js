@@ -5,11 +5,19 @@ import Header from "./Header";
 const Layout = ({ children }) => {
   const router = useRouter();
 
+  const { forceFooter, embedded } = router.query;
+
+  let FooterComponent = <Footer />;
+
+  if (embedded && !forceFooter) {
+    FooterComponent = null;
+  }
+
   return (
     <>
       <Header />
       <main>{children}</main>
-      {router.query.embedded ? null : <Footer />}
+      {FooterComponent}
     </>
   );
 };
