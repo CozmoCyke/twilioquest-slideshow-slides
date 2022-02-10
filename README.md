@@ -11,3 +11,12 @@ npm run dev
 ```
 
 Any kind of local or remotely hosted server that can be opened by an iFrame could be used instead of this demo application.
+
+If you got an error when you run the server try these steps
+
+```bash
+npm cache clear --force
+del package-lock.json
+npm install
+npm run dev
+```
